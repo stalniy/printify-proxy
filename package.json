@@ -1,10 +1,10 @@
 {
-  "name": "casl-shop",
+  "name": "casl-store",
   "private": true,
   "version": "0.0.0",
-  "description": "CASL shop",
+  "description": "CASL store",
   "arc": {
-    "app": "casl-shop",
+    "app": "casl-store",
     "http": [
       {
         "/commands/order": {
