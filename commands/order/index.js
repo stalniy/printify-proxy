@@ -1,6 +1,5 @@
 const arc = require('@architect/functions');
-const corsHeaders = require('../../services/corsHeaders');
-const api = require('../../services/printifyApi');
+const { api, corsHeaders } = require('@architect/shared');
 
 exports.handler = async function order(req) {
   const body = arc.http.helpers.bodyParser(req);

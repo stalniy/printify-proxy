@@ -1,4 +1,4 @@
-const corsHeaders = require('../services/corsHeaders');
+const { corsHeaders } = require('@architect/shared');
 
 exports.handler = function cors() {
   return {

@@ -1,5 +1,4 @@
-const corsHeaders = require('../../services/corsHeaders');
-const api = require('../../services/printifyApi');
+const { api, corsHeaders } = require('@architect/shared');
 
 exports.handler = async function findProducts() {
   const response = await api.get('/products.json');
