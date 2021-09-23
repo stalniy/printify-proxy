@@ -1,2 +1,0 @@
-# printify-proxy
-Begin app
