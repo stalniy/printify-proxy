@@ -1,4 +1,4 @@
-const { corsHeaders } = require('../../cors');
+const corsHeaders = require('../../services/corsHeaders');
 const api = require('../../services/printifyApi');
 
 exports.handler = async function findProducts() {

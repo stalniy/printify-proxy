@@ -1,6 +1,4 @@
-const assert = require('assert');
-
-assert.ok(process.env.CORS_ORIGIN, 'Please specify CORS_ORIGIN');
+const corsHeaders = require('../services/corsHeaders');
 
 exports.handler = function cors() {
   return {
@@ -10,15 +8,5 @@ exports.handler = function cors() {
       ...corsHeaders(),
     },
     body: 'test'
-  };
-}
-
-exports.corsHeaders = corsHeaders;
-
-function corsHeaders() {
-  return {
-    'access-control-allow-headers': 'X-Requested-With, Content-Type',
-    'access-control-allow-methods': 'GET, POST',
-    'access-control-allow-origin': process.env.CORS_ORIGIN,
   };
 }
