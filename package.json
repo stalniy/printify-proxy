@@ -42,7 +42,10 @@
           "src": "/cors"
         }
       }
-    ]
+    ],
+    "shared": {
+      "src": "/services"
+    }
   },
   "scripts": {
     "start": "npx sandbox"
