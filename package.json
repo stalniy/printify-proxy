@@ -44,7 +44,7 @@
       }
     ],
     "shared": {
-      "src": "/services"
+      "src": "services"
     }
   },
   "scripts": {

@@ -7,7 +7,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@architect/functions": "^4.0.0",
-    "@architect/shared": "file:../../services"
+    "@architect/functions": "^4.0.0"
   }
 }

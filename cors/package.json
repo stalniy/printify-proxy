@@ -5,8 +5,5 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@architect/shared": "file:../services"
-  }
+  "license": "ISC"
 }
