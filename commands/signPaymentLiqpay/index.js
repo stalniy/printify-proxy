@@ -2,7 +2,7 @@ const arc = require('@architect/functions');
 const { liqpay, corsHeaders } = require('@architect/shared');
 
 exports.handler = async function signPaymentLiqpay(req) {
-  const body = arc.http.helpers.bodyParser(req);
+  const body = JSON.parse(arc.http.helpers.bodyParser(req));
   const result = liqpay.signPayment({
     orderId: body.orderId,
     amount: body.price,
