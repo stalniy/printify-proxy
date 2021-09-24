@@ -11,6 +11,7 @@ exports.handler = async function signPaymentLiqpay(req) {
     phone: body.phone,
   });
 
+  console.log('incomming request', body);
   console.log('signing payment: ', {
     orderId: body.orderId,
     amount: body.price,
