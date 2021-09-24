@@ -32,7 +32,7 @@
       },
       {
         "/signPaymentLiqpay": {
-          "method": "get",
+          "method": "post",
           "src": "/signPaymentLiqpay"
         }
       },
