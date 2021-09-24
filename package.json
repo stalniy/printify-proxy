@@ -31,13 +31,13 @@
         }
       },
       {
-        "/signPaymentLiqpay": {
+        "/commands/signPaymentLiqpay": {
           "method": "post",
-          "src": "/signPaymentLiqpay"
+          "src": "/commands/signPaymentLiqpay"
         }
       },
       {
-        "/signPaymentLiqpay": {
+        "/commands/signPaymentLiqpay": {
           "method": "options",
           "src": "/cors"
         }

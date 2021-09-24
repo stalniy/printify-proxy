@@ -1,7 +1,7 @@
-const { corsHeaders, liqpay } = require('@architect/shared');
 const arc = require('@architect/functions');
+const { liqpay, corsHeaders } = require('@architect/shared');
 
-exports.handler = function signPaymentLiqpay(req) {
+exports.handler = async function signPaymentLiqpay(req) {
   const body = arc.http.helpers.bodyParser(req);
   const result = liqpay.signPayment({
     orderId: body.orderId,
@@ -11,8 +11,6 @@ exports.handler = function signPaymentLiqpay(req) {
     phone: body.phone,
   });
 
-  console.log('--->', JSON.stringify(result));
-
   return {
     statusCode: 200,
     headers: {
@@ -20,5 +18,5 @@ exports.handler = function signPaymentLiqpay(req) {
       ...corsHeaders(),
     },
     body: JSON.stringify(result),
-  };
+  }
 }

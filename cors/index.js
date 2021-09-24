@@ -7,6 +7,6 @@ exports.handler = function cors() {
       'Access-Control-Max-Age': '600',
       ...corsHeaders(),
     },
-    body: 'test'
+    body: ''
   };
 }
