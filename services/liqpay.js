@@ -21,6 +21,7 @@ exports.signPayment = function signPayment(options) {
     result_url: options.resultUrl,
     ip: options.ip,
   };
+  console.log('liqpay request', request);
   const data = encodeRequest(request);
 
   return {
