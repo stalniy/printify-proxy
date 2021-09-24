@@ -11,6 +11,8 @@ exports.handler = function signPaymentLiqpay(req) {
     phone: body.phone,
   });
 
+  console.log('--->', result);
+
   return {
     statusCode: 200,
     headers: {
