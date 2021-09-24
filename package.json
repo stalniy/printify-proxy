@@ -31,6 +31,18 @@
         }
       },
       {
+        "/signPaymentLiqpay": {
+          "method": "get",
+          "src": "/signPaymentLiqpay"
+        }
+      },
+      {
+        "/signPaymentLiqpay": {
+          "method": "options",
+          "src": "/cors"
+        }
+      },
+      {
         "/products": {
           "method": "get",
           "src": "/products/findAll"
